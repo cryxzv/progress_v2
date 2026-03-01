@@ -146,14 +146,10 @@ onMounted(() => {
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
-html {
+/* html {
   overflow: scroll;
   overflow-x: hidden;
-}
-::-webkit-scrollbar {
-  width: 0; /* Remove scrollbar space */
-  background: transparent; /* Optional: just make scrollbar invisible */
-}
+} */
 
 body {
   margin: 0%;
@@ -162,8 +158,8 @@ body {
 
 #main {
   background: #191919;
-  width: 100vw;
-  height: 300vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   overflow-x: hidden;
 }
@@ -181,7 +177,7 @@ body {
 }
 
 #bg-rect-1 {
-  position: absolute;
+  position: fixed;
   width: 65vw;
   height: 125vh;
   left: -22vw;
@@ -191,7 +187,7 @@ body {
 }
 
 #bg-rect-2 {
-  position: absolute;
+  position: fixed;
   width: 80vw;
   height: 165vh;
   left: 30vw;
@@ -268,6 +264,7 @@ body {
   flex-direction: column;
   margin-top: 6rem;
   justify-content: center;
+  padding-bottom: 6rem;
 }
 
 #start {
