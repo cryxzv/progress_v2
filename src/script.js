@@ -1,5 +1,5 @@
 export function start() {
-  bar1 = document.querySelectorAll('.comp-bar')
+  let bar1 = document.querySelectorAll('.comp-bar')
   console.log(bar1)
   let evmin = bar1[0]
   let evhour = bar1[1]
@@ -9,7 +9,7 @@ export function start() {
   let evapr = bar1[5]
   let evleap = bar1[6]
 
-  textR = document.querySelectorAll('.event-textR')
+  let textR = document.querySelectorAll('.event-textR')
   let txmin = textR[0]
   let txhour = textR[1]
   let txtmr = textR[2]
